@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.weather-card {
+    width: 230px;
+    height: 280px;
+    
+    padding: 18px;
+    background-color: rgb(56 189 248);
+    border-radius: 0.5rem;
+}
+
+.form-input {
+    max-width: 500px;
+}
+
+.hover-icon {
+    @apply hover:bg-sky-700 w-28 rounded-lg
+}
+
+.icon-display {
+    @apply flex items-center gap-4
+}
+
+.form-input {
+    @apply bg-slate-200 h-20 rounded-lg text-center placeholder:text-sky-400 outline-0 hover:bg-slate-300
+}
+

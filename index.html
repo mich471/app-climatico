@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="./src/assets/nube.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>app clima</title>
+  </head>
+  <body class="bg-zinc-100">
+    <header class="	bg-sky-400 px-5">
+      <nav class="flex 	w-[85%] mx-auto	justify-between items-center">
+        <div class="icon-display">
+          <a  href="" class="font-black	text-xl flex	items-center gap-4 no-underline text-black">AGWEATHER
+            <img src="./public/icons8-weather-50.png" alt="Logo">
+          </a>
+        </div>
+       
+        <div class="icon-display">
+          <div class="hover-icon">
+            <a target="_blank" class="flex flex-col items-center justify-center  py-4" href="https://openweathermap.org/">
+              <img class="w-14" src="./public/icons8-api-64.png" alt="conoce la Api">
+            </a>
+          </div>
+          <div class="hover-icon">
+            <a target="_blank"  class="flex flex-col items-center justify-center  py-4" href="https://github.com/mich471/WEATHER-APP">
+            <img class="w-14" src="./public/icons8-github-50.png" alt="repositorio">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="xsm:my-[50px] my-[100px] ">
+      <div class="flex flex-col	 items-center justify-center">
+        <div class="">
+          <h1 class="text-[30px] uppercase p-2.5 text-center font-bold	my-5">¡Conoce el clima de todas las ciudades!</h1>
+        </div>
+        <form action="" class=" flex  justify-center  w-5/6	gap-3">
+          <input class="form-input w-5/6 p-3 text-[20px]" type="text" id="input-data" placeholder="Busca la ciudad">
+          <button class="bg-sky-400 hover:bg-sky-700 p-3 rounded-lg text-[20px]"  id="add">Buscar</button> 
+          <div class="flex items-center">
+            <button class=""  id="remove"><i class="bi bi-trash3 text-5xl	"></i></button> 
+        </form>
+      </div>
+         
+      </div>
+      <span id="mensaje"></span>
+      <div class="cards-container flex mt-14 flex-wrap justify-center gap-8" id="app">
+        
+      </div>
+    </main>
+    <script src="./index.js" type="module" ></script>
+  </body>
+</html>
